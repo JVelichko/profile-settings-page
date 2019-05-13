@@ -1,0 +1,32 @@
+extends model/layout.pug
+
+block title
+  title index.html page
+
+block content
+  main
+    aside.menu
+      .menu__container
+        .menu__section
+          .menu__heading
+            .menu__icon.icon__user_light
+            span Personal settings
+          a(href="profile_details.html").menu__item Profile details
+          a.menu__item Account info
+          a.menu__item Email preferences
+          a.menu__item Work schedule
+          a.menu__item Password & security
+          a.menu__item Apps access
+        .menu__section
+          .menu__heading
+            .menu__icon.icon__settings_light
+            span ACCOUNT MANAGMENT
+          a.menu__item Subscription
+          a.menu__item Billing
+          a.menu__item Users & groups
+          a.menu__item Request form builder
+          a.menu__item Custom workflows
+          a.menu__item Activity reports
+          a.menu__item Calendars
+          a.menu__item Account settings
+          a.menu__item Advanced security
