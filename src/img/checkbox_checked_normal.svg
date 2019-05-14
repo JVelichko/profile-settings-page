@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>atoms/checkbox/icons/checked/normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="atoms/checkbox/icons/checked/normal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z" id="box" fill-opacity="0.32" fill="#000000"></path>
+        <polygon id="checkmark" fill="#4488FF" points="3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5"></polygon>
+    </g>
+</svg>

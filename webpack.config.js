@@ -2,7 +2,6 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const fs = require('fs');
 
 // Cross Env Setting Webpack
@@ -189,36 +188,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new FaviconsWebpackPlugin({
-      // Your source logo
-      logo: './src/img/favicon.png',
-      // The prefix for all image files (might be a folder or a name)
-      prefix: 'img/icons-[hash]/',
-      // Emit all stats of the generated icons
-      emitStats: false,
-      // The name of the json containing all favicon information
-      statsFilename: 'iconstats-[hash].json',
-      // Generate a cache file with control hashes and
-      // don't rebuild the favicons until those hashes change
-      persistentCache: true,
-      // Inject the html into the html-webpack-plugin
-      inject: true,
-      background: '#fff',
-      // Favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-      //title: 'Webpack App',
-      icons: {
-        android: false,
-        appleIcon: false,
-        appleStartup: false,
-        coast: false,
-        favicons: true,
-        firefox: false,
-        opengraph: false,
-        twitter: false,
-        yandex: false,
-        windows: false
-      }
-    }),
     new CleanWebpackPlugin(pathsToClean),
     extractSass
   ].concat(entryHtmlPlugins)
