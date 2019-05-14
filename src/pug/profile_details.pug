@@ -37,84 +37,90 @@ block content
           .profile
             .profile__img
               img(src=require('../img/user_image.jpg'), alt="user")
-              .profile__overflow upload
+              a(href="#").profile__overflow upload
             .profile__inner
               h2.profile__name Alise
               .profile__text.text_primary UI developer (crafting Team)
-        .row
-          .col.col_sm
-            .form-group
-              input(type="text" placeholder="First name" value="Alise")#first_name
-              label(for="#first_name") First name
-          .col.col_sm
-            .form-group
-              input(type="text" disabled value="Smith" placeholder="Last name")#last_name
-              label(for="#last_name") Last name
-        .row
-          .col.col_sm
-            .form-group
-              input(type="text" placeholder="Company name")#company_name
-              label(for="#company_name") Company name
-          .col.col_sm
-            .form-group.form-group_error
-              input(type="text" placeholder="Job title")#job_title
-              label(for="#job_title") Job title
-        .row
-          .col.col_sm
-            .form-group
-              input(type="text" placeholder="Location")#location
-              label(for="#location") Location
-          .col.col_sm
-            .form-group
-              input(type="text" placeholder="Phone number")#phone_number
-              label(for="#phone_number") Phone number
+        form(action="sumbit" name="personal_info")
+          .row
+            .col.col_sm
+              .form-group
+                input(type="text" placeholder="First name" value="Alise")#first_name
+                label(for="#first_name") First name
+            .col.col_sm
+              .form-group
+                input(type="text" disabled value="Smith" placeholder="Last name")#last_name
+                label(for="#last_name") Last name
+          .row
+            .col.col_sm
+              .form-group
+                input(type="text" placeholder="Company name")#company_name
+                label(for="#company_name") Company name
+            .col.col_sm
+              .form-group.form-group_error
+                input(type="text" placeholder="Job title")#job_title
+                label(for="#job_title") Job title
+          .row
+            .col.col_sm
+              .form-group
+                input(type="text" placeholder="Location")#location
+                label(for="#location") Location
+            .col.col_sm
+              .form-group
+                input(type="text" placeholder="Phone number")#phone_number
+                label(for="#phone_number") Phone number
         .row
           .col.col_sm
             .button-group
-              button.button.button_primary Save changes
+              button(type="submit" form="personal_info" value="Submit" disabled).button.button_primary Save changes
               button.button.button_secondary Cancel
       section#workspace_settings.section
         h2.section_heading Workspace settings
+        form(action="sumbit" name="workspace_settings")
+          .row
+            .col.col_sm
+              .form-group
+                .custom-select(data-placeholder="Select time zone" tabindex="0")
+                  select#time_zone
+                    option(value="GMT+1") (GMT +1) Central European Time
+                    option(value="GMT+2") (GMT +2) Eastern European Time
+                    option(value="GMT+3") (GMT +3) Moscow Time
+                    option(value="GMT+4") (GMT +4) Samara Time
+                    option(value="GMT+5") (GMT +5) Yekaterinburg Time
+                label(for="#time_zone") Time zone
+            .col.col_sm
+              .form-group
+                .custom-select(data-placeholder="Select language" tabindex="0")
+                  select#language
+                    option(value="english") English
+                    option(value="russian") Russian
+                    option(value="german") German
+                    option(value="spanish") Spanish
+                    option(value="japanese") Japanese
+                    option(value="malay") Malay
+                    option(value="romanian") Romanian
+                    option(value="turkish") Turkish
+                    option(value="burmese") Burmese
+                label(for="#language") Language
+          .row
+            .col.col_sm
+              .form-group
+                .custom-select(data-placeholder="Select new task created by default as" tabindex="0")
+                  select#new_task
+                    option(value="Backlogged") Backlogged
+                    option(value="Bug") Bug
+                    option(value="Feature") Feature
+                    option(value="Hotfix") Hotfix
+                    option(value="Task") Task
+                label(for="#new_task") New task created by default as
+          .row
+            .col.col_sm
+              div
+                input#pop-up_show.custom-checkbox(type='checkbox', value='show')
+                label(for='pop-up_show')
+                  span Show pop-up with suggestion to align the dates of tasks and subtasks.
+                span.link.link_offset How does subtask alignment work?
         .row
           .col.col_sm
-            .form-group
-              .custom-select(data-placeholder="Select time zone" tabindex="0")
-                select#time_zone
-                  option(value="GMT+1") (GMT +1) Central European Time
-                  option(value="GMT+2") (GMT +2) Eastern European Time
-                  option(value="GMT+3") (GMT +3) Moscow Time
-                  option(value="GMT+4") (GMT +4) Samara Time
-                  option(value="GMT+5") (GMT +5) Yekaterinburg Time
-              label(for="#time_zone") Time zone
-          .col.col_sm
-            .form-group
-              .custom-select(data-placeholder="Select language" tabindex="0")
-                select#language
-                  option(value="english") English
-                  option(value="russian") Russian
-                  option(value="german") German
-                  option(value="spanish") Spanish
-                  option(value="japanese") Japanese
-                  option(value="malay") Malay	
-                  option(value="romanian") Romanian	
-                  option(value="turkish") Turkish
-                  option(value="burmese") Burmese
-              label(for="#language") Language
-        .row
-          .col.col_sm
-            .form-group
-              .custom-select(data-placeholder="Select new task created by default as" tabindex="0")
-                select#new_task
-                  option(value="Backlogged") Backlogged
-                  option(value="Bug") Bug
-                  option(value="Feature") Feature
-                  option(value="Hotfix") Hotfix
-                  option(value="Task") Task
-              label(for="#new_task") New task created by default as
-        .row
-          .col.col_sm
-            .form-group
-              input#pop-up_show.custom-checkbox(type='checkbox', value='show')
-              label(for='pop-up_show') 
-                span Show pop-up with suggestion to align the dates of tasks and subtasks.
-                // span.link How does subtask alignment work? 
+            .button-group
+              button(type="submit" form="workspace_settings" value="Submit" disabled).button.button_primary Save changes

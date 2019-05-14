@@ -15,6 +15,7 @@ select.forEach(item => {
   const selectedValue = document.createElement('span');
   selected.appendChild(selectedValue);
   selectedValue.innerHTML = item.dataset.placeholder;
+  selectEl.value = '';
 
   item.appendChild(selected);
   const dropdown = document.createElement('div');
@@ -28,6 +29,8 @@ select.forEach(item => {
       options.forEach((elem, index) => {
         if (elem.innerHTML == this.innerHTML) {
           selectEl.selectedIndex = index;
+          selectEl.value = elem.value;
+          selectEl.dispatchEvent(new Event('change', { 'bubbles': true }));
           selectedValue.innerHTML = this.innerHTML;
 
           const activeItem = this.parentNode.querySelector('.active');
@@ -43,8 +46,7 @@ select.forEach(item => {
   });
 
   item.appendChild(dropdown);
-  item.addEventListener('click', function (e) {
-    e.stopPropagation();
+  item.addEventListener('click', function () {
     dropdown.classList.toggle('custom-select_hidden');
   });
 
@@ -57,6 +59,16 @@ select.forEach(item => {
   document.addEventListener('click', e => outsideClick(e));
 });
 
+/* enable save changes buttons*/
+const submitButtons = document.querySelectorAll('button[type="submit"]');
+const forms = document.querySelectorAll('FORM');
 
-
-
+forms.forEach(item => {
+  item.addEventListener('change', function() {
+    submitButtons.forEach(btn => {
+      if (btn.getAttribute('form') === item.name) {
+        btn.disabled = false;
+      }
+    });
+  });
+});
