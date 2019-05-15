@@ -8,7 +8,7 @@ html, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   height: 100vh;
-  width: 100wh;
+  width: 100vw;
 }
 
 header {
@@ -225,6 +225,7 @@ main {
   display: flex;
   height: calc(100vh - 56px);
   background-color: #284159;
+  overflow: auto;
 }
 
 .menu {
@@ -296,7 +297,7 @@ main {
 
 .icon__arrow_light {
   @extend .icon;
-  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3EUI/16/arrows/down-semibold_icon%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3Cpolygon id='path-1' points='8 8.5 11 5.5 12 6.5 8 10.5 4 6.5 5 5.5'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='UI/16/arrows/down-semibold' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cmask id='mask-2' fill='white'%3E%3Cuse xlink:href='%23path-1'%3E%3C/use%3E%3C/mask%3E%3Cg id='arrow_down' fill-rule='nonzero'%3E%3C/g%3E%3Cg id='colors/MAIN/black' mask='url(%23mask-2)' fill='%23ffffff' fill-opacity='0.9' opacity='0.900000036'%3E%3Crect id='color' x='0' y='0' width='16' height='16' rx='2'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3EUI/16/arrows/down-semibold_icon%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3Cpolygon id='path-1' points='8 8.5 11 5.5 12 6.5 8 10.5 4 6.5 5 5.5'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='UI/16/arrows/down-semibold' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cmask id='mask-2' fill='23ffffff'%3E%3Cuse xlink:href='%23path-1'%3E%3C/use%3E%3C/mask%3E%3Cg id='arrow_down' fill-rule='nonzero'%3E%3C/g%3E%3Cg id='colors/MAIN/black' mask='url(%23mask-2)' fill='%23000000' fill-opacity='0.9' opacity='0.900000036'%3E%3Crect id='color' x='0' y='0' width='16' height='16' rx='2'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .icon__user_dark {
@@ -336,19 +337,19 @@ main {
 }
 
 .icon_checkbox_checked_disabled {
-  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/checked/disabled%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/checked/disabled' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0.16'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill='%23000000'%3E%3C/path%3E%3Cpolygon id='checkmark' fill='%23000000' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/checked/disabled%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/checked/disabled' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0.16'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill='%23000000'%3E%3C/path%3E%3Cpolygon id='checkbox__checkmark' fill='%23000000' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
 }
 
 .icon_checkbox_checked_hover {
-  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/checked/hover%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/checked/hover' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill='%23619AFF'%3E%3C/path%3E%3Cpolygon id='checkmark' fill='%23619AFF' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/checked/hover%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/checked/hover' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill='%23619AFF'%3E%3C/path%3E%3Cpolygon id='checkbox__checkmark' fill='%23619AFF' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
 }
 
 .icon_checkbox_checked_invalid {
-  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/invalid/checked%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/invalid/checked' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill-opacity='0.8' fill='%23F15866'%3E%3C/path%3E%3Cpolygon id='checkmark' fill='%23F15866' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/invalid/checked%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/invalid/checked' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill-opacity='0.8' fill='%23F15866'%3E%3C/path%3E%3Cpolygon id='checkbox__checkmark' fill='%23F15866' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
 }
 
 .icon_checkbox_checked_normal {
-  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/checked/normal%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/checked/normal' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill-opacity='0.32' fill='%23000000'%3E%3C/path%3E%3Cpolygon id='checkmark' fill='%234488FF' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --%3E%3Ctitle%3Eatoms/checkbox/icons/checked/normal%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='atoms/checkbox/icons/checked/normal' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0,4.0085302 C0,2.8992496 0.900176167,2 1.99201702,2 L11,2 L10,3 L1.99754465,3 C1.44661595,3 1,3.4556644 1,3.99539757 L1,12.0046024 C1,12.5543453 1.4556644,13 1.99539757,13 L10.0046024,13 C10.5543453,13 11,12.5424361 11,12.0064025 L11,9.5 L12,8.5 L12,11.9988153 C12,13.1040391 11.0980496,14 9.9914698,14 L2.0085302,14 C0.899249601,14 0,13.0980496 0,11.9914698 L0,4.0085302 Z' id='box' fill-opacity='0.32' fill='%23000000'%3E%3C/path%3E%3Cpolygon id='checkbox__checkmark' fill='%234488FF' points='3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
 }
 
 .content {
@@ -366,22 +367,29 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: $offset-24;
+
 }
 
 .col {
   display: flex;
   min-height: 1px;
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
 
   &:not(:last-of-type) {
     margin-right: $offset-32;
   }
 
   &_sm {
-    width: 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
   }
 }
 
-input {
+.input {
   @extend .text_primary;
 
   width: 100%;
@@ -418,10 +426,11 @@ label {
 .form-group {
   position: relative;
   display: flex;
+  flex: 1;
   flex-direction: column-reverse;
   width:100%;
 
-  &_error input {
+  &_invalid .input {
     border-color: #F15866;
     caret-color: currentColor;
 
@@ -531,6 +540,15 @@ select {
     }
   }
 
+  &_invalid {
+    border-color: #F15866;
+    caret-color: currentColor;
+
+    &+label {
+      color: #F15866;
+    }
+  }
+
   select {
     display: none;
   }
@@ -590,65 +608,6 @@ select {
   }
 }
 
-.custom-checkbox {
-  position: absolute;
-  opacity: 0;
-
-  & + label {
-    @extend .text_primary;
-
-    position: relative;
-    display: flex;
-    margin-bottom: $offset-8;
-    padding: 0;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  & + label:before {
-    @extend .icon_checkbox_unchecked_normal;
-
-    content: '';
-    display: inline-flex;
-    flex-shrink: 0;
-    width: 22px;
-    height: 22px;
-    margin-right: 2px;
-    background-repeat: no-repeat;
-    background-position: left center;
-  }
-
-  &:hover + label:before {
-    @extend .icon_checkbox_unchecked_hover;
-  }
-
-  &:focus + label:before {
-    @extend .icon_checkbox_unchecked_focus;
-  }
-
-  &:checked + label:before {
-    @extend .icon_checkbox_checked_normal;
-  }
-
-  &:checked.invalid + label:before {
-    @extend .icon_checkbox_checked_invalid;
-  }
-
-  &.invalid + label:before {
-    @extend .icon_checkbox_unchecked_invalid;
-  }
-
-  &:disabled + label {
-    color: #b8b8b8;
-    cursor: auto;
-  }
-
-  &:disabled + label:before {
-    @extend .icon_checkbox_unchecked_disabled;
-  }
-
-}
-
 .link {
   @extend .text_primary;
 
@@ -660,6 +619,102 @@ select {
   }
 
   &_offset {
-    margin-left: $offset-24;
+    margin-left: 20px;
   }
+}
+
+
+.checkbox:checked,
+.checkbox:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  .checkbox:checked + label,
+  .checkbox:not(:checked) + label {
+    @extend .text_primary;
+    
+    position: relative;
+    display: inline-block;
+    padding-left: 22px;
+    cursor: pointer;
+  }
+  
+  .checkbox + label:before {
+    @extend .icon_checkbox_unchecked_normal;
+    
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    transform: translateY(3px);
+  background-repeat: no-repeat;
+}
+
+.checkbox:checked + label:before {
+  @extend .icon_checkbox_checked_normal;  
+}
+
+.checkbox:not([disabled]) + label:hover {
+  color: #69A0FF;
+  cursor: pointer;
+  
+  &:before {
+    @extend .icon_checkbox_unchecked_hover;
+  }
+}
+
+.checkbox:not([disabled]):checked + label:hover:before {
+  @extend .icon_checkbox_checked_hover;
+}
+
+.checkbox:focus + label {
+  color: #4488FF;
+  
+  &:before {
+    @extend .icon_checkbox_unchecked_focus;
+  }
+}
+
+.checkbox:disabled + label:before {
+  @extend .icon_checkbox_unchecked_disabled;
+  
+  pointer-events: none;
+}
+
+.checkbox:disabled:checked + label:before {
+  @extend .icon_checkbox_checked_disabled;
+}
+
+.checkbox:disabled + label {
+  color: rgba(0,0,0,0.32); 
+  cursor: not-allowed;
+}
+
+.checkbox.checkbox_invalid + label:before,
+.checkbox.checkbox_invalid:focus + label:before   {
+  @extend .icon_checkbox_unchecked_invalid;
+}
+
+.checkbox.checkbox_invalid:hover:focus + label:before,
+.checkbox.checkbox_invalid:hover + label:before   {
+  @extend .icon_checkbox_unchecked_hover;
+}
+
+.checkbox.checkbox_invalid + label {
+  color: #F15866;
+}
+
+.checkbox.checkbox_invalid:checked + label:before {
+  @extend .icon_checkbox_checked_invalid;
+  }
+  
+/* ui-kit*/
+.ui-container {
+  margin: auto;
+  padding: 40px;
+  width: 900px;
+  background-color: #ffffff;
+  overflow: auto;
 }

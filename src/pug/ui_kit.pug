@@ -1,0 +1,121 @@
+extends model/layout.pug
+
+block title
+  title ui_kit.html page
+
+block content
+  main
+    div.ui-container
+      .row
+        .col.col_sm
+          span Input
+        .col.col_sm
+          .form-group
+            input(type="text" placeholder="First name" value="Alise")#first_name.input
+            label(for="#first_name") First name
+      .row
+        .col.col_sm
+          span Input disabled
+        .col.col_sm
+          .form-group
+            input(type="text" placeholder="First name" disabled)#first_name.input
+            label(for="#first_name") First name
+      .row
+        .col.col_sm
+          span Input invalid
+        .col.col_sm
+          .form-group.form-group_invalid
+            input(type="text" placeholder="First name")#first_name.input
+            label(for="#first_name") First name
+      .row
+        .col.col_sm
+          span Select
+        .col.col_sm
+          .form-group
+            .custom-select(data-placeholder="Select time zone" tabindex="0")
+              select#time_zone
+                option(value="GMT+1") (GMT +1) Central European Time
+                option(value="GMT+2") (GMT +2) Eastern European Time
+                option(value="GMT+3") (GMT +3) Moscow Time
+                option(value="GMT+4") (GMT +4) Samara Time
+                option(value="GMT+5") (GMT +5) Yekaterinburg Time
+            label(for="#time_zone") Time zone
+      .row
+        .col.col_sm
+          span Select disabled
+        .col.col_sm
+          .form-group
+            .custom-select(data-placeholder="Select time zone" tabindex="0" disabled)
+              select#time_zone
+                option(value="GMT+1") (GMT +1) Central European Time
+                option(value="GMT+2") (GMT +2) Eastern European Time
+                option(value="GMT+3") (GMT +3) Moscow Time
+                option(value="GMT+4") (GMT +4) Samara Time
+                option(value="GMT+5") (GMT +5) Yekaterinburg Time
+            label(for="#time_zone") Time zone
+      .row
+        .col.col_sm
+          span Select invalid
+        .col.col_sm
+          .form-group
+            .custom-select.custom-select_invalid(data-placeholder="Select time zone" tabindex="0")
+              select#time_zone
+                option(value="GMT+1") (GMT +1) Central European Time
+                option(value="GMT+2") (GMT +2) Eastern European Time
+                option(value="GMT+3") (GMT +3) Moscow Time
+                option(value="GMT+4") (GMT +4) Samara Time
+                option(value="GMT+5") (GMT +5) Yekaterinburg Time
+            label(for="#time_zone") Time zone
+      .row
+        .col.col_sm
+          span Checkbox
+        .col.col_sm
+          .form-group
+            input(type="checkbox")#checkbox1.checkbox
+            label(for="checkbox1") Show pop-up with suggestion to align the dates of tasks and subtasks.
+      .row
+        .col.col_sm
+          span Checkbox disabled
+        .col.col_sm
+          .form-group
+            input(type="checkbox" disabled)#checkbox2.checkbox
+            label(for="checkbox2") Show pop-up with suggestion to align the dates of tasks and subtasks.
+      .row
+        .col.col_sm
+          span Checkbox invalid
+        .col.col_sm
+          .form-group
+            input(type="checkbox")#checkbox3.checkbox.checkbox_invalid
+            label(for="checkbox3") Show pop-up with suggestion to align the dates of tasks and subtasks.
+      .row
+        .col.col_sm
+          span Profile
+        .col.col_sm
+          .profile
+            .profile__img
+              img(src=require('../img/user_image.jpg'), alt="user")
+            .profile__inner
+              .profile__name.text_primary Alise
+              .profile__text.text_secondary Wrike Team
+      .row
+        .col.col_sm
+          span Profile small
+        .col.col_sm
+          .profile.profile_sm
+            .profile__img
+              img(src=require('../img/user_image.jpg'), alt="user")
+            .profile__inner
+              .profile__name.text_primary Alise
+              .profile__text.text_secondary Wrike Team
+      .row
+        .col.col_sm
+          span Profile small light
+        .col.col_sm(style="background-color: brown")
+          .profile.profile_light.profile_sm
+            .profile__img
+              img(src=require('../img/user_image.jpg'), alt="user")
+            .profile__inner
+              .profile__name.text_primary Alise
+              .profile__text.text_secondary Wrike Team
+      
+      
